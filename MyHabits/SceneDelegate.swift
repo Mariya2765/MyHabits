@@ -43,6 +43,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         tabBarController.tabBar.standardAppearance = tabBarAppearance
         tabBarController.tabBar.scrollEdgeAppearance = tabBarAppearance
 
+        //цвет выбранной кнопки вместо синего по умолчанию
+        tabBarController.tabBar.tintColor = UIColor(red: 161/255.0, green: 22/255.0, blue: 204/255.0, alpha: 1.0)
+
         tabBarController.viewControllers = [createHabitsViewController(), createInfoViewController()]
         return tabBarController
     }
